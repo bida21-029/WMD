@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(IMAGES/wrapper.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+.wrapper{
+    height: auto;
+    width: 100%;
+   
+}
+.menu{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.menu li{
+    display: inline-block    
+}
+.menu li a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu li a:hover{
+    background: lightgreen;
+    border-radius: 13px;
+}
+.logo{
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: greenyellow;
+    font-size: 2.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align:center ;
+}
+.text h1{
+    text-align: center;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.text p{
+    color: lightgreen;
+}
+.searchbar{
+    position: absolute;
+    top: 70%;
+    left:40%
+}
+.searchbar{
+    border: 2px solid lawngreen;
+    background:blueviolet;
+}
+

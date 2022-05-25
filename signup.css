@@ -1,0 +1,42 @@
+*{
+    margin: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-image: url(IMAGES/wrapper.jpg)
+}
+.form{
+    margin-top: 50px;
+    text-align: center;
+}
+input{
+    display: block;
+    width: 500px;
+    height: 50px;
+    margin: 20px;
+}
+h1{
+    text-decoration: solid;
+    text-transform: uppercase;
+    color: green;
+    font-size: 50px;
+}
+h1:hover{
+    background: antiquewhite;
+    color: green;
+}
+button{
+    width: 100px;
+    height: 40px;
+    text-decoration: solid;
+    font-size: 20px;
+    background-color: green;
+}
+   
+    

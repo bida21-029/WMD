@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Upcoming</title>
+        <meta charset="utf-8">
+        <style>
+         *{
+             background-color: blueviolet;
+             
+         }
+         .var k{
+             width: 100vh;
+             height: 100%;
+         }
+        </style>
+        <link rel="stylesheet" type="text" href="slideshow.css">
+    </head>
+    <body>
+
+        <div id="divcontainer">
+
+
+            <img id="slide" src="slideshow()" alt="Gallery Images" title="Upcoming" onerror="this.src=null; this.src='IMAGES/slideshow/image_12.jpg'">
+
+
+        </div>
+
+
+        <script>
+
+            //STEP 1: - create array to hold slideshow images
+            var arrgallery = new Array();
+
+            //STEP 2: - load images into array
+            var k; //variable controlling the loop
+            for(k=0; k<12; k++){
+                arrgallery[k] = `IMAGES/slideshow/image_${k+1}.jpg`
+            }
+
+            //STEP 3: - declare variable to control looping of images / slideshow
+            var imgIndex = 0;
+
+            //STEP 4: - load the image for the slideshow and increment imgIndex
+            function slideshow(){
+                document.getElementById("slide").setAttribute("src", arrgallery[imgIndex]);
+                imgIndex = (imgIndex < arrgallery.length)? imgIndex + 1 : 0;
+                //alert(`NOW AT POSITION : ${imgIndex}`);
+            }
+
+            //STEP 5: - set timer interval, number of seconds for an image to display
+            window.onload = function(){
+                setInterval("slideshow()", 2000); //setTimeout("slideshow()", 5000); //1second = 1000ms
+            }
+
+        </script>
+
+    </body>
+</html>

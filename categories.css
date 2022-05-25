@@ -1,0 +1,23 @@
+.submenu{
+    list-style: none;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color: blueviolet;
+}
+text{
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+    
